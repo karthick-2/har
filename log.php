@@ -5,7 +5,7 @@ session_start();
 // check if the user is already logged in
 if(isset($_SESSION['username']))
 {
-    header("location: wel.php");
+    header("location: wel.html");
     exit;
 }
 require_once "config.php";
@@ -50,7 +50,7 @@ if(empty($err))
                             $_SESSION["loggedin"] = true;
 
                             //Redirect user to welcome page
-                            header("location: wel.php");
+                            header("location: wel.html");
                             
                         }
                     }
